@@ -1,12 +1,12 @@
 //var results = $.get(`http://api.giphy.com/v1/gifs/search?q=disney&api_key=ansxed5p3AGVsc5TPLocIqLK9vNnfTFd&limit=30`);
 //results.done(function(response) {
-   // console.log("successfully received data", response);
-    //var gifs = response.data
+// console.log("successfully received data", response);
+//var gifs = response.data
 
-   // for (i in gifs) 
-   // {
-   // $('.inner').append("<img src='"+gifs[i].images.original.url"' />")
-   // }
+// for (i in gifs) 
+// {
+// $('.inner').append("<img src='"+gifs[i].images.original.url"' />")
+// }
 //});
 
 // var api = 'https://api.giphy.com/v1/gifs/search?';
@@ -42,9 +42,61 @@
 //let url="ansxed5p3AGVsc5TPLocIqLK9vNnfTFd"
 //q: Search query term or phrase
 //limit:The maximum number of objects to return"
+// $(".mybtn").on("click",function(e){
+//     // Stop the default behaviour.
+//     e.preventDefault();
+//     //
+//     var jsonUrl = this.href + "&json=1";
 
+//     $.ajax({
+//         url: jsonUrl,
+//         type: "json",
+//         method: "get",
 
-//javascript, jQuery
+//         success: function(data){
+//             // do something with the data
+//             alert(data);
+//         }
+//     });
 
-var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=ansxed5p3AGVsc5TPLocIqLK9vNnfTFd&limit=5");
-xhr.done(function(data) { console.log("success got data", data); });
+// });
+
+function displayResults(results) {
+    let myHtml = "<div class = 'row'>";
+    for (res of results) {
+        myHtml = myHtml +
+            `<div class='col-sm-4'>
+        <img src=${res.images.original.url} />
+    </div>`
+    }
+
+    myHtml = myHtml + "</div>"
+
+    console.log(myHtml);
+        $('#results').html{
+        myHtml;
+    };
+
+}
+
+function fetchDataFromGiphy(searchTerm) {
+    let url = `https://api.giphy.com/v1/gifs/search?api_key=ansxed5p3AGVsc5TPLocIqLK9vNnfTFd&q=${searchTerm}`
+    console.log(url);
+}
+
+fetch(url)
+    .then(function (response) {
+        return response.json();
+    }).then(function (result) {
+        displayResults(result.data)
+    })
+}
+function bootApp() {
+    console.log('Page is loaded up!');
+    console.log('jquery is available', $);
+
+    let searchTerm = 'corona';
+    fetchDataFromGiphy(searchTerm);
+}
+
+$(bootApp)
