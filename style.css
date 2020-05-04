@@ -1,4 +1,13 @@
-#search bar {
-    margin:auto;
-    max-width: 300px;
+html {
+    background-color: #1a1a1d;
+}
+h1 {
+    color: #950740;
+    font-family: 'Concert One';
+    font-size: 5em;
+    text-align: center;
+}
+.form-group {
+    color: #c3073f;
+    font-family: 'Concert One'
 }

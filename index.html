@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Myra's Giphy Page</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1 class="title">Giphy's in a Jiffy</h1>
-    <input type = "text" placeholder="Pixar, Disney, Netflix...">
-    <div id='results'>
-    
-    </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-    <script src="C:\Users\Myraj\OneDrive\Documents\GitHub\Test\scripts.js"></script>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Myra's Giphy Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
   
-    
-  </body>
+</head>
+
+<body>
+  <h1 class="title">Giphy's in a Jiffy</h1>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="gif-search" class="control-label col-md-3">Show me a Gif:</label>
+        <div class="col-md-6">
+          <input type="text" id="search" class="form-control"  placeholder="80's, Disney, Music..."/>
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+
+
+  <div id='results'>
+
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="C:\Users\Myraj\OneDrive\Documents\GitHub\Test\scripts.js"></script>
+
+
+
+</body>
+
 </html>
