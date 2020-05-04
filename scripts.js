@@ -30,13 +30,12 @@ function fetchDataFromGiphy(searchTerm) {
         })
 
 }
-
-
+document.getElementById("myForm").addEventListener("click", checkForm, false);
 
 function loadApp() {
     $('#button').on('click', function () {
         console.log('Get me results!');
-        fetchTheResults('#searchbar');
+        fetchTheResults('#search');
     });
     console.log('Page is loaded!');
     console.log('Jquery is accessible', $);
@@ -44,7 +43,7 @@ function loadApp() {
     // get data from the form that the user user types in
 
     let searchTerm = 'disney';
-    fetchDataFromGiphy(#search)
+    fetchDataFromGiphy(searchTerm)
 }
 
 

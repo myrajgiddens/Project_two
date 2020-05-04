@@ -9,5 +9,21 @@ h1 {
 }
 .form-group {
     color: #c3073f;
-    font-family: 'Concert One'
+    font-family: 'Concert One';
+    text-align: center;
+    font-size: 2em;
+ 
+}
+.form-control {
+    color: #c3073f;
+    font-family: 'Concert One';
+    text-align: center;
+    font-size: .5em;
+    margin-top: auto;
+    margin-bottom: auto;
+ 
+}
+
+.container {
+    text-align: center;
 }
