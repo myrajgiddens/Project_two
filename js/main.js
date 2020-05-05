@@ -1,4 +1,4 @@
-// //   ansxed5p3AGVsc5TPLocIqLK9vNnfTFd
+
 // const apiKey='ansxed5p3AGVsc5TPLocIqLK9vNnfTFd'
 // const searchUrl='https://api.giphy.com/v1/gifs/search'
 
@@ -21,8 +21,6 @@ function displayResults (results) {
 
 }
 
-
-
 function fetchDataFromGiphy (searchTerm) {
   let url = `https://api.giphy.com/v1/gifs/search?api_key=4zv45wmD5vJvLn2UE3B4tNBY1ny9kZZV&q=${searchTerm}`;
   console.log(url);
@@ -40,12 +38,13 @@ function fetchDataFromGiphy (searchTerm) {
 
 }
 
+// Ensuring submitting form does not reload page, then grabbing user input from search bar 
 
 function bootApp() {
   console.log('Page is loaded!');
   console.log('Jquery is available', $);
 
-  // get data from the form that the user user types in
+// using searchTerm received from user to fetch new API results/new Gifs
   $('#myForm').on('submit', (event) => {
     event.preventDefault();
     let searchTerm=$('#searchTerm').val();
@@ -57,12 +56,9 @@ function bootApp() {
   
 }
 
+// Grabbing user input from search bar
 function getSearchTerm() {
   console.log
 }
-
-
-
-
 
 $(bootApp)
