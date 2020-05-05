@@ -1,3 +1,6 @@
+/* color scheme: #1a1a1d, #c3073f, #950740 */
+
+
 html {
     background-color: #1a1a1d;
 }
@@ -7,6 +10,8 @@ h1 {
     font-size: 6em;
     text-align: center;
 }
+
+/* form formatting */
 .form-group {
     color: #c3073f;
     font-family: 'Concert One';
@@ -33,6 +38,7 @@ h1 {
     margin-bottom: auto;
 }
 
+/* formatting for container for results */
 .container {
     text-align: center;
     display: justify-content;
