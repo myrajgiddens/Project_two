@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Myra's Giphy Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="./style.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -14,29 +14,30 @@
   <h1 class="title">Giphy's in a Jiffy</h1>
   <form method="post" class="form-horizontal" id="myForm">
     <div class="form-group">
-      <label for="gif-search" class="form">Show me a Gif:</label>
+      <label for="gif-search" class="form col-md-3">Show me a Gif:</label>
       <div class="col-md-6">
-        <input type="text" id="searchTerm" class="form-control" placeholder="80's, Disney, Music..." />
+        <input type="text" id="searchTerm" class="form-control col-md-6" placeholder="80's, Disney, Music..." />
         <button id="submit">Submit</button>
       </div>
     </div>
   </form>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <div id='results'>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div id='results'>
+          </div>
         </div>
       </div>
-    </div>
-  </div>>
+    </div>>
+  
 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-      <script src="C:\Users\Myraj\OneDrive\Documents\GitHub\Project_two\scripts.js"></script>
+  <script src="./scripts.js"></script>
 
 
 

@@ -26,4 +26,7 @@ h1 {
 
 .container {
     text-align: center;
+    display: justify-content;
+    flex-wrap: wrap;
+
 }
