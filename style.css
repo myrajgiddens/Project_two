@@ -12,6 +12,7 @@ h1 {
     font-family: 'Concert One';
     text-align: center;
     font-size: 3em;
+    padding-bottom: 50px;
  
 }
 .form-control {
@@ -23,10 +24,55 @@ h1 {
     margin-bottom: auto;
  
 }
+#submit {
+    color: #1a1a1d;
+    font-family: 'Concert One';
+    text-align: center;
+    font-size: .5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 .container {
     text-align: center;
     display: justify-content;
     flex-wrap: wrap;
 
+}
+#results {
+    flex-wrap: wrap; 
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.page-wrapper {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2
 }
